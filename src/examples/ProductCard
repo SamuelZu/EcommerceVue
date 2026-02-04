@@ -1,0 +1,17 @@
+<script lang="ts">
+  export default {
+    data() {
+      return {
+        product: {
+          name: 'Silla',
+          price: 56
+        }
+      }
+    }
+  }
+</script>
+
+<template>
+  <p>Nombre: {{ product.name }}</p>
+  <p>Precio: {{ product.price }}</p>
+</template>
