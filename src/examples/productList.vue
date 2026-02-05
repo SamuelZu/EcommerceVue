@@ -1,5 +1,10 @@
 <script lang="ts">
+import ProductCard from './ProductCard.vue'
+
 export default {
+  components: {
+    ProductCard
+  },
   data() {
     return {
       products: [
@@ -14,8 +19,7 @@ export default {
 </script>
 
 <template>
-  <ul>
-    <li v-for="product in products">
-      {{ product.name }} (${{ product.price }})</li>
-  </ul>
+  <ProductCard 
+    v-for="p in products" 
+    :product="p"/>
 </template>
