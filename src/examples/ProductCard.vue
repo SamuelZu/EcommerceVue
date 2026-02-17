@@ -1,8 +1,12 @@
 <script lang="ts">
+import type { PropType } from 'vue';
 import type { Product } from './Product';
   export default {
     props: {
-      product: Object as PropType<Product>
+      product: {
+        type: Object as PropType<Product>,
+        required: true
+      }
     },
   }
 </script>
